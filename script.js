@@ -18,7 +18,7 @@
 
   function scrollVertically(targetSection) {
     let targetSectionCoordinates = targetSection.getBoundingClientRect();
-    if(targetSection.id=='contact'){
+    if (targetSection.id == 'contact') {
       if (targetSectionCoordinates.top <= 200) {
         clearInterval(interval);
         return;
@@ -63,7 +63,7 @@
     for (let bar of progressBars) {
       let barCoordinates = bar.getBoundingClientRect();
       if ((bar.getAttribute("data-visited") == "false") &&
-      (barCoordinates.top <= (window.innerHeight - barCoordinates.height))) {
+        (barCoordinates.top <= (window.innerHeight - barCoordinates.height))) {
         bar.setAttribute("data-visited", true);
         fillBar(bar);
       } else if (barCoordinates.top > window.innerHeight) {
