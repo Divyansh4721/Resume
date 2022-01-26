@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .social-icons li a i {
-  padding: 10px;
+  padding: 10px 12px;
   font-size: 1rem;
   border-radius: 50%;
 }
@@ -444,7 +444,7 @@ section:nth-child(2n + 1) {
 #contact .social-icons li a i {
   font-size: 1.2rem;
   margin: 40px 10px 10px;
-  padding: 10px 14px 20px 10px;
+  padding: 10px 12px;
 
 }
 
@@ -499,7 +499,9 @@ button:focus {
 .m-blue {
   color: #2857a4;
 }
-
+.mb-pink {
+  background-color: #9C0F48;
+}
 .mb-blue {
   background-color: #2857a4;
 }
@@ -551,7 +553,6 @@ button:focus {
   height: inherit;
   width: 50%;
 }
-
 
 @media only screen and (max-width: 572px) {
 
