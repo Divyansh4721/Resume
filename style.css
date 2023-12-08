@@ -8,10 +8,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
-
 /* Body Header */
-
 #body-header {
   height: 65vh;
   opacity: 0.8;
@@ -22,10 +19,7 @@ body::-webkit-scrollbar {
   padding-top: 1.2rem;
 }
 
-
-
 /* Horizontal Lists */
-
 .bars {
   color: white;
   margin: 0;
@@ -90,7 +84,6 @@ body::-webkit-scrollbar {
   margin: 0px 8px 8px 0px;
 }
 
-
 .nav-menu li a {
   transition: color 0.5s, border-bottom 4s;
 }
@@ -100,9 +93,7 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid black;
 }
 
-
 /* Name and Social Icons*/
-
 #name-social-container {
   margin-top: 20vh;
 }
@@ -125,10 +116,7 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-
-
 /*Section Classes*/
-
 section {
   display: flex;
   flex-direction: column;
@@ -158,15 +146,11 @@ section:nth-child(2n + 1) {
   margin-right: 0.5rem;
 }
 
-
-
 /*About Section*/
-
 #about {
   height: auto;
   width: 100%;
   position: relative;
-  margin-bottom: 30px;
 }
 
 #my-image {
@@ -194,10 +178,7 @@ section:nth-child(2n + 1) {
   margin: auto;
 }
 
-
-
 /*Skills Section*/
-
 .skills-display {
   width: 75%;
   padding: 10px;
@@ -229,10 +210,7 @@ section:nth-child(2n + 1) {
   vertical-align: middle;
 }
 
-
-
 /* Education */
-
 .timeline {
   position: relative;
   width: 75%;
@@ -253,7 +231,7 @@ section:nth-child(2n + 1) {
   width: 15px;
   height: 15px;
   background-color: lightgrey;
-  top: 25%;
+  top: 8%;
   border-radius: 50%;
   z-index: 1;
 }
@@ -287,10 +265,10 @@ section:nth-child(2n + 1) {
 #timeline-divider {
   position: absolute;
   width: 0;
-  top: 10%;
+  top: 3%;
   left: 50%;
   border: 1px dashed #0096fa6b;
-  height: 72%;
+  height: 85%;
   color: #433E3F;
 }
 
@@ -333,13 +311,7 @@ section:nth-child(2n + 1) {
   line-height: 20px;
 }
 
-
-
-
-
-
 /* Portfolio Section */
-
 #portfolio-container {
   box-sizing: border-box;
   display: flex;
@@ -369,9 +341,9 @@ section:nth-child(2n + 1) {
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   color: transparent;
   text-align: center;
-  padding: 10px;
 }
 
 .portfolio-image-container:hover {
@@ -383,10 +355,7 @@ section:nth-child(2n + 1) {
   color: white;
 }
 
-
-
 /* Contact Form */
-
 #contact {
   background-color: #0abcf9;
   background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
@@ -418,7 +387,6 @@ section:nth-child(2n + 1) {
   width: 50%;
 }
 
-
 .my-details-info-container {
   margin-bottom: 20px;
   color: #d9dcdd;
@@ -440,12 +408,10 @@ section:nth-child(2n + 1) {
   margin-right: 0.5rem;
 }
 
-
 #contact .social-icons li a i {
   font-size: 1.2rem;
   margin: 40px 10px 10px;
   padding: 10px 12px;
-
 }
 
 input:focus,
@@ -456,7 +422,6 @@ button:focus {
 }
 
 /* Common Text Align Classes */
-
 .text-right {
   text-align: right;
 }
@@ -470,7 +435,6 @@ button:focus {
 }
 
 /* Common Margin Classes */
-
 .m0 {
   margin: 0;
 }
@@ -483,25 +447,21 @@ button:focus {
   margin-bottom: 50px;
 }
 
-
-
 /*common color classes */
-
 .text-highlight {
   color: #2857a4;
   font-weight: 600;
-
 }
 
-
 /* setting background-color */
-
 .m-blue {
   color: #2857a4;
 }
+
 .mb-pink {
   background-color: #9C0F48;
 }
+
 .mb-blue {
   background-color: #2857a4;
 }
@@ -517,7 +477,6 @@ button:focus {
 .mb-light-purple {
   background-color: #93738c;
 }
-
 
 .mb-col1 {
   background-color: #a45a28;
@@ -535,10 +494,7 @@ button:focus {
   background-color: #a4283f;
 }
 
-
-
 /*Percentage Classes */
-
 .eighty-five-percent {
   height: inherit;
   width: 85%;
@@ -555,7 +511,6 @@ button:focus {
 }
 
 @media only screen and (max-width: 572px) {
-
   .timeline-box {
     width: 100%;
     left: 10% !important;
@@ -565,16 +520,12 @@ button:focus {
     display: block;
   }
 
-
   .nav-menu {
     display: none;
   }
 }
 
-
-
 @media only screen and (max-width: 768px) {
-
 
   .timeline-box {
     width: 90%;
@@ -607,5 +558,4 @@ button:focus {
     width: 80%;
     margin: 10%;
   }
-
 }

@@ -1,7 +1,6 @@
 {
   let navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
   let interval;
-
   for (let i = 0; i < navMenuAnchorTags.length; i++) {
     navMenuAnchorTags[i].addEventListener('click', function (event) {
       event.preventDefault();
@@ -9,7 +8,6 @@
       console.log(this.textContent);
       let targetSection = document.getElementById(targetSectionID);
       console.log(targetSection);
-
       interval = setInterval(function () {
         scrollVertically(targetSection);
       }, 20);
@@ -23,28 +21,24 @@
         clearInterval(interval);
         return;
       }
-    }
-    else if (targetSectionCoordinates.top <= 0) {
+    } else if (targetSectionCoordinates.top <= 0) {
       clearInterval(interval);
       return;
     }
     window.scrollBy(0, 50);
   }
-}
-{
+} {
   let progressBars = document.querySelectorAll(".skill-progress > div");
 
   function initialiseBar(bar) {
     bar.setAttribute("data-visited", false);
     bar.style.width = 0 + '%';
   }
-
   for (let bar of progressBars) {
     initialiseBar(bar);
   }
 
   function fillBar(bar) {
-
     let currentWidth = 0;
     let targetWidth = bar.getAttribute("data-bar-width");
     let interval = setInterval(function () {
@@ -55,11 +49,9 @@
       currentWidth++;
       bar.style.width = currentWidth + '%';
     }, 5);
-
   }
 
   function checkScroll() {
-
     for (let bar of progressBars) {
       let barCoordinates = bar.getBoundingClientRect();
       if ((bar.getAttribute("data-visited") == "false") &&
@@ -70,9 +62,7 @@
         bar.setAttribute("data-visited", false);
         initialiseBar(bar);
       }
-
     }
   }
-
   window.addEventListener("scroll", checkScroll);
 }
